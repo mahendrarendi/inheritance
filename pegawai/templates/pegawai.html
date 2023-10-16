@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informasi Pegawai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Informasi Pegawai Menggunakan Konsep Inheritance</h1>
+    
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Pegawai Tetap</h2>
+                <p>Nama: {{ pegawai_tetap.nama }}</p>
+                <p>NIP: {{ pegawai_tetap.nip }}</p>
+                <p>Golongan: {{ pegawai_tetap.golongan }}</p>
+                <p>Gaji Pokok: {{ pegawai_tetap.perhitungan_gaji() }}</p>
+            </div>
+    
+            <div class="col">
+                <h2>Pegawai Harian</h2>
+                <p>Nama: {{ pegawai_harian.nama }}</p>
+                <p>NIP: {{ pegawai_harian.nip }}</p>
+                <p>Golongan: {{ pegawai_harian.golongan }}</p>
+                <p>Gaji Pokok: {{ pegawai_harian.perhitungan_gaji() }}</p>
+            </div>
+
+            <div class="col">
+                <h2>Pegawai Kontrak</h2>
+                <p>Nama: {{ pegawai_kontrak.nama }}</p>
+                <p>NIP: {{ pegawai_kontrak.nip }}</p>
+                <p>Golongan: {{ pegawai_kontrak.golongan }}</p>
+                <p>Gaji Bulanan: {{ pegawai_kontrak.perhitungan_gaji() }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
