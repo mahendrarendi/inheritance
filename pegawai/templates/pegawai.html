@@ -22,7 +22,10 @@
                 <p>Nama: {{ pegawai_harian.nama }}</p>
                 <p>NIP: {{ pegawai_harian.nip }}</p>
                 <p>Golongan: {{ pegawai_harian.golongan }}</p>
-                <p>Gaji Pokok: {{ pegawai_harian.perhitungan_gaji() }}</p>
+                <p>Jam Kerja: {{ pegawai_harian.jam_kerja }}</p>
+                <p>Upah per Jam: {{ pegawai_harian.upah_per_jam }}</p>
+                <p>Gaji: {{ pegawai_harian.perhitungan_gaji() }}</p>
+            
             </div>
 
             <div class="col">
@@ -30,7 +33,9 @@
                 <p>Nama: {{ pegawai_kontrak.nama }}</p>
                 <p>NIP: {{ pegawai_kontrak.nip }}</p>
                 <p>Golongan: {{ pegawai_kontrak.golongan }}</p>
-                <p>Gaji Bulanan: {{ pegawai_kontrak.perhitungan_gaji() }}</p>
+                <p>Lama Kontrak: {{ pegawai_kontrak.lama_kontrak }} bulan</p>
+                <p>Gaji Bulanan: {{ pegawai_kontrak.gaji_bulanan }}</p>
+                <p>Gaji: {{ pegawai_kontrak.perhitungan_gaji() }}</p>
             </div>
         </div>
     </div>
