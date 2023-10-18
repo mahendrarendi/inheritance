@@ -43,4 +43,4 @@ def index():
     return render_template('pegawai.html', pegawai_tetap=pegawai_tetap, pegawai_harian=pegawai_harian, pegawai_kontrak=pegawai_kontrak)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=9000)
